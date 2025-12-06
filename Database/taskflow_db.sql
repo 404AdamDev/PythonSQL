@@ -8,7 +8,7 @@ CREATE TABLE usuarios (
     email VARCHAR(255) NOT NULL UNIQUE KEY,
     senha_hash VARCHAR(255) NOT NULL,
     criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+) ENGINE InnoDB;
 
 
 CREATE TABLE tarefas (
@@ -20,7 +20,7 @@ CREATE TABLE tarefas (
     criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     concluido_em DATETIME NULL,
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+) ENGINE InnoDB;
 
 CREATE INDEX idx_usuario_id ON tarefas(usuario_id);
 CREATE INDEX idx_usuario_id_status ON tarefas(usuario_id, status);

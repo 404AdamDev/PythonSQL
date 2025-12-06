@@ -3,9 +3,3 @@ venv/
 env/
 .venv/
 .env/
-
-# Pacotes instalados
-lib/
-Lib/
-Scripts/
-Include/
