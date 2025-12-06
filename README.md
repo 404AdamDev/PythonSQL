@@ -12,26 +12,11 @@ Este projeto contém duas versões do sistema:
 
 ```
 PythonSQL/
- ├── main-class/
- ├── main-alchemy/
+ ├── main-class.py
+ ├── main-alchemy.py
  ├── README.md
  └── requirements.txt
 ```
-
----
-
-## 🧰 Tecnologias Utilizadas
-
-### Linguagem:
-- Python 3.x
-
-### Banco de Dados:
-- MySQL
-
-### ORM:
-- SQLAlchemy 2.x
-
----
 
 ## 📦 Dependências Necessárias
 
