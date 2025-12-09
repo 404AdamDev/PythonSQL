@@ -3,8 +3,9 @@ Sistema de gerenciamento de tarefas (TO-DO) com integração MySQL utilizando SQ
 
 Este projeto contém duas versões do sistema:
 
-- **main-class**: implementação sem uso de banco de dados, focada apenas em lógica e manipulação local.  
-- **main-alchemy**: versão completa utilizando MySQL + SQLAlchemy para persistência e consultas estruturadas.
+- **main-class**: implementação sem uso de banco de dados.  
+- **main-alchemy**: versão completa utilizando MySQL + SQLAlchemy.
+- **main-alchemy-orm**: versão completa utilizando MySQL + SQLAlchemy ORM.
 
 ---
 
@@ -14,22 +15,10 @@ Este projeto contém duas versões do sistema:
 PythonSQL/
  ├── main-class/
  ├── main-alchemy/
+ ├── main-alchemy-orm/
  ├── README.md
  └── requirements.txt
 ```
-
----
-
-## 🧰 Tecnologias Utilizadas
-
-### Linguagem:
-- Python 3.x
-
-### Banco de Dados:
-- MySQL
-
-### ORM:
-- SQLAlchemy 2.x
 
 ---
 
@@ -98,6 +87,8 @@ pip install -r requirements.txt
 python main-class.py
 # ou
 python main-alchemy.py
+# ou
+python main-alchemy-orm.py
 ```
 
 ---
@@ -111,5 +102,3 @@ Este projeto é de uso livre para fins educacionais e pessoais.
 ## 📌 Autor
 
 Desenvolvido por **404AdamDev**.
-
----
